@@ -4,8 +4,6 @@ import { NextApiRequest, NextApiResponse } from "next";
 // Initiating Magic instance for server-side methods
 const magic = new Magic(process.env.MAGIC_SECRET_KEY);
 
-// Login API
-// Validates didToken
 export default async function login(req: NextApiRequest, res: NextApiResponse) {
   try {
     console.log("req.body: ", req.body);

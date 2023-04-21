@@ -1,10 +1,11 @@
 import React, { MouseEventHandler } from "react";
 import PulseLoader from "react-spinners/PulseLoader";
 
-// Button input props
 interface ButtonProps {
   onClick?: MouseEventHandler<HTMLButtonElement>;
   label?: string;
+  className?: string;
+  secondary?: boolean;
   loading?: boolean;
   disabled?: boolean;
 }
@@ -12,6 +13,8 @@ interface ButtonProps {
 export default function Button({
   onClick,
   label,
+  className,
+  secondary = false,
   loading,
   disabled = false,
 }: ButtonProps) {

@@ -4,14 +4,13 @@ import TextField from "../ui/form-fields/TextField";
 import { REGEX_EMAIL } from "../utils/regex";
 import Button from "../ui/buttons/Button";
 
-// Login Form input props
 interface LoginFormProps {
   loading: boolean;
   onSubmit: SubmitHandler<FieldValues>;
 }
 
 export default function LoginForm({ onSubmit, loading }: LoginFormProps) {
-  // Initialize React Hook Form
+  // React Hook Form variables
   const {
     control,
     formState: { errors },
