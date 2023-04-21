@@ -5,6 +5,7 @@ import Router, { useRouter } from "next/router";
 import { magic } from "@/lib/magic";
 import { motion } from "framer-motion";
 import Page from "@/components/ui/pages/Page";
+import PulseLoader from "react-spinners/PulseLoader";
 
 const title = `Profile`;
 const subtitle = `Congrats you're logged in!`;
@@ -29,7 +30,7 @@ const Profile = () => {
     <Page title={title}>
       <div>
         {loading ? (
-          <div>Loading...</div>
+          <PulseLoader color="#64B6AC" size={8} />
         ) : (
           user?.issuer && (
             <div className="flex flex-col w-full">
