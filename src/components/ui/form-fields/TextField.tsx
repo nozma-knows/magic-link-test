@@ -78,7 +78,7 @@ export default function TextField({
               errors={errors}
               name={name}
               render={({ message }) => (
-                <div className="flex justify-end w-full text-red-500 text-sm font-bold">
+                <div className="flex justify-end w-full text-black text-sm font-bold">
                   {message}
                 </div>
               )}

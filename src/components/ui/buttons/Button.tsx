@@ -21,20 +21,12 @@ export default function Button({
   const defaultLabel = "Select";
 
   return (
-    <button onClick={onClick} disabled={disabled}>
-      <div
-        className={`${
-          className
-            ? `${className}`
-            : `flex button p-4 rounded-lg button-primary ${
-                secondary && "button-secondary"
-              } ${disabled && "button-disabled"} `
-        }`}
-      >
+    <button onClick={onClick} disabled={disabled || loading}>
+      <div className="flex button p-4 rounded-lg bg-[#173F5F] text-white button">
         {loading ? (
-          <PulseLoader color="#58335e" size={8} />
+          <PulseLoader color="#64B6AC" size={8} />
         ) : (
-          <div className="font-semibold">{label || defaultLabel}</div>
+          <div className="font-bold text-xl">{label || defaultLabel}</div>
         )}
       </div>
     </button>

@@ -16,20 +16,11 @@ const muiTheme = createTheme({
     MuiOutlinedInput: {
       styleOverrides: {
         root: {
-          color: "#000000",
+          color: "#FFFFFF",
           width: "100%",
-          borderRadius: "10px",
-          fieldset: {
-            borderWidth: 2,
-            borderColor: "#000000",
-          },
-          "&:hover .MuiOutlinedInput-notchedOutline": {
-            borderWidth: 4,
-            borderColor: "#000000",
-          },
+          backgroundColor: "#173F5F",
           "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
-            borderWidth: 4,
-            borderColor: "#000000",
+            borderWidth: 0,
           },
         },
       },
