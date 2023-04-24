@@ -8,4 +8,6 @@ $ yarn install
 $ yarn dev // starts app in http://localhost:3000
 ```
 
+## Associated Blog Post
 
+- https://www.noahnetworks.com/blog/976d3d6d-90e3-4589-92eb-0f523e09b2dd
